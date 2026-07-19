@@ -1,0 +1,185 @@
+:root {
+  --text: #1c1c1c;
+  --muted: #5c5c5c;
+  --bg: #ffffff;
+  --accent: #8a1538; /* granate, guiño a la UGR */
+  --border: #e6e6e6;
+  --max-width: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+/* Navegación */
+nav.site-nav {
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.5rem;
+}
+
+nav.site-nav .nav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 1.75rem;
+  flex-wrap: wrap;
+}
+
+nav.site-nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+nav.site-nav a:hover,
+nav.site-nav a.active {
+  color: var(--accent);
+}
+
+/* Cabecera / perfil */
+header.profile {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+header.profile img.avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--border);
+  flex-shrink: 0;
+}
+
+header.profile h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.6rem;
+}
+
+header.profile p.role {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* Enlaces de contacto */
+ul.links {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+}
+
+ul.links li a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.92rem;
+  border-bottom: 1px solid transparent;
+}
+
+ul.links li a:hover {
+  border-bottom-color: var(--accent);
+}
+
+/* Secciones */
+section {
+  margin-bottom: 2.25rem;
+}
+
+section h2 {
+  font-size: 1.05rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  margin: 0 0 0.75rem;
+}
+
+ul.plain {
+  padding-left: 1.1rem;
+  margin: 0;
+}
+
+ul.plain li {
+  margin-bottom: 0.5rem;
+}
+
+/* Tarjetas simples (asignaturas, proyectos, publicaciones) */
+.card {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1rem;
+}
+
+.card .meta {
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.4rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+/* Novedades */
+.news-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.news-item .date {
+  color: var(--muted);
+  white-space: nowrap;
+  font-size: 0.85rem;
+  min-width: 90px;
+}
+
+footer {
+  border-top: 1px solid var(--border);
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  header.profile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
