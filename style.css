@@ -177,6 +177,34 @@ footer {
   text-align: center;
 }
 
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  background-color: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #6a0f2a;
+}
+
+/* Bloques de código */
+pre {
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 480px) {
   header.profile {
     flex-direction: column;

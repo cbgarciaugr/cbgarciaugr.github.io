@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Transferencia | Catalina B. García García</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a href="index.html">Inicio</a>
+    <a href="docencia.html">Docencia</a>
+    <a href="investigacion.html">Investigación</a>
+    <a href="transferencia.html" class="active">Transferencia</a>
+  </div>
+</nav>
+
+<div class="container">
+
+  <section>
+    <h2>Transferencia de Conocimiento</h2>
+    <p>
+      En esta sección comparto herramientas y recursos desarrollados como resultado de mi investigación en econometría y diagnóstico de multicolinealidad.
+    </p>
+  </section>
+
+  <section>
+    <h2>Paquetes R</h2>
+    
+    <div class="card">
+      <h3>multiCollglm</h3>
+      <p class="meta">Diagnóstico de multicolinealidad en modelos lineales generalizados</p>
+      <p>
+        Paquete R que proporciona herramientas para diagnosticar colinealidad en modelos lineales generalizados (GLMs) 
+        mediante el número de condición, análisis de varianza tipo Belsley-Kuh-Welsch, y el Factor de Inflación de 
+        Varianza Redefinido (RVIF). El paquete incluye métodos para cinco definiciones del número de condición y 
+        soporte para modelos regularizados con glmnet.
+      </p>
+      <p style="margin-top: 1rem;">
+        <strong>Características:</strong>
+      </p>
+      <ul class="plain">
+        <li>Número de condición con 5 métodos diferentes (RAW, MP, MS, WS, OZ)</li>
+        <li>Análisis completo de descomposición de varianza</li>
+        <li>RVIF para detección de colinealidad ML</li>
+        <li>Métodos para glm, glmnet y cv.glmnet</li>
+        <li>Cuatro conjuntos de datos de ejemplo</li>
+      </ul>
+      <p style="margin-top: 1rem;">
+        <a href="https://github.com/cbgarciaugr/multiCollglm" target="_blank" rel="noopener" class="btn">
+          📦 Ver en GitHub
+        </a>
+        <a href="https://cbgarciaugr.github.io/multiCollglm/" target="_blank" rel="noopener" class="btn">
+          📖 Documentación
+        </a>
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Instalación</h2>
+    <p>Para instalar multiCollglm desde GitHub en R, ejecuta:</p>
+    <pre style="background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto;">remotes::install_github("cbgarciaugr/multiCollglm")</pre>
+  </section>
+
+  <footer>
+    &copy; 2026 Catalina B. García García — Universidad de Granada
+  </footer>
+
+</div>
+</body>
+</html>
