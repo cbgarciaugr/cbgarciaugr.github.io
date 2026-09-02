@@ -58,11 +58,62 @@
       </p>
     </div>
 
+    <div class="card">
+      <h3>multiColl</h3>
+      <p class="meta">Diagnóstico de multicolinealidad en modelos lineales</p>
+      <p>
+        Paquete R para el diagnóstico de multicolinealidad en regresión lineal. Proporciona herramientas para 
+        calcular el número de condición, análisis de descomposición de varianza tipo Belsley-Kuh-Welsch, 
+        y otros indicadores clásicos de multicolinealidad.
+      </p>
+      <p style="margin-top: 1rem;">
+        <a href="https://cran.r-project.org/package=multiColl" target="_blank" rel="noopener" class="btn">
+          📦 Ver en CRAN
+        </a>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>rvif</h3>
+      <p class="meta">Factor de Inflación de Varianza Redefinido</p>
+      <p>
+        Paquete R que implementa el Factor de Inflación de Varianza Redefinido (RVIF), una medida mejorada 
+        para diagnosticar multicolinealidad que se adapta mejor a la estructura de la colinealidad en los datos.
+      </p>
+      <p style="margin-top: 1rem;">
+        <a href="https://cran.r-project.org/package=rvif" target="_blank" rel="noopener" class="btn">
+          📦 Ver en CRAN
+        </a>
+      </p>
+    </div>
+
   </section>
 
   <section>
-    <h2>Instalación</h2>
-    <p>Para instalar multiCollglm desde GitHub en R, ejecuta:</p>
+    <h2>Aplicaciones Interactivas</h2>
+
+    <div class="card">
+      <h3>FAIRE: Factor Analysis Interactive Research Explorer</h3>
+      <p class="meta">Aplicación Shiny para diagnóstico de multicolinealidad</p>
+      <p>
+        Aplicación web interactiva que permite visualizar y explorar diferentes medidas de diagnóstico 
+        de multicolinealidad de forma intuitiva. Ideal para investigadores, docentes y estudiantes que 
+        quieren entender mejor la multicolinealidad en sus datos.
+      </p>
+      <p style="margin-top: 1rem;">
+        <a href="https://catalinabgarciagarcia.shinyapps.io/app_paper/" target="_blank" rel="noopener" class="btn">
+          🚀 Abrir FAIRE
+        </a>
+      </p>
+    </div>
+
+  </section>
+
+  <section>
+    <h2>Instalación desde CRAN y GitHub</h2>
+    <p><strong>multiColl y rvif</strong> (disponibles en CRAN):</p>
+    <pre style="background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto;">install.packages(c("multiColl", "rvif"))</pre>
+    <p style="margin-top: 1.5rem;"><strong>multiCollglm</strong> (desde GitHub):</p>
     <pre style="background: #f5f5f5; padding: 1rem; border-radius: 4px; overflow-x: auto;">remotes::install_github("cbgarciaugr/multiCollglm")</pre>
   </section>
 
