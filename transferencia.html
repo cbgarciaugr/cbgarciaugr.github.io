@@ -93,17 +93,46 @@
     <h2>Aplicaciones Interactivas</h2>
 
     <div class="card">
-      <h3>FAIRE: Factor Analysis Interactive Research Explorer</h3>
-      <p class="meta">Aplicación Shiny para diagnóstico de multicolinealidad</p>
+      <h3>FAIRE: Fair Assignment of Inequality-aware Reductions of Emissions</h3>
+      <p class="meta">Explorar cómo distribuir equitativamente el esfuerzo climático global</p>
       <p>
-        Aplicación web interactiva que permite visualizar y explorar diferentes medidas de diagnóstico 
-        de multicolinealidad de forma intuitiva. Ideal para investigadores, docentes y estudiantes que 
-        quieren entender mejor la multicolinealidad en sus datos.
+        La reducción de emisiones de gases de efecto invernadero es uno de los principales desafíos de la política 
+        climática global. La Ley del Clima Europeo establece el objetivo de reducir las emisiones netas en al menos 
+        un 55% para 2030 en comparación con los niveles de 1990. ¿Pero cómo debe distribuirse este objetivo global 
+        entre los países individuales?
+      </p>
+      <p style="margin-top: 1rem;">
+        Esta aplicación permite calcular cómo cada país debe ajustar sus emisiones, basándose en una herramienta 
+        científicamente fundamentada desarrollada por Prieto, García y Salmerón (2025). El modelo utiliza una 
+        distribución lognormal para reasignar emisiones de forma justa considerando dos dimensiones clave:
+      </p>
+      <ul class="plain">
+        <li><strong>📏 Cambio de escala:</strong> reducir las emisiones promedio manteniendo la desigualdad de emisiones entre países</li>
+        <li><strong>📊 Cambio de desigualdad:</strong> cambiar la desigualdad de emisiones entre países manteniendo las emisiones promedio</li>
+      </ul>
+      <p>
+        Los países se clasifican en:
+      </p>
+      <ul class="plain">
+        <li><strong>🟢 Grupo 1:</strong> Pueden aumentar emisiones</li>
+        <li><strong>🟡 Grupo 2:</strong> Deben reducir, pero menos que el objetivo global</li>
+        <li><strong>🔴 Grupo 3:</strong> Deben reducir más que el objetivo global</li>
+      </ul>
+      <p style="margin-top: 1rem;">
+        Comienza calculando la reasignación para una reducción global del 55% para 2030. ¡Luego experimenta con otros objetivos y años!
       </p>
       <p style="margin-top: 1rem;">
         <a href="https://catalinabgarciagarcia.shinyapps.io/app_paper/" target="_blank" rel="noopener" class="btn">
           🚀 Abrir FAIRE
         </a>
+        <a href="https://doi.org/10.1016/j.seps.2024.101714" target="_blank" rel="noopener" class="btn">
+          📄 Leer artículo
+        </a>
+      </p>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: #5c5c5c;">
+        <strong>Referencia:</strong> Prieto-Mendoza, F., García-García, C.B. and Salmerón-Gómez, R. (2025). 
+        Modelling global fossil CO<sub>2</sub> emissions with a lognormal distribution. 
+        <em>Socio-Economic Planning Sciences</em>, 97.
       </p>
     </div>
 
